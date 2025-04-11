@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carnet de Sanidad</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
+
+    header {
+      position: relative;
+      width: 100%;
+      height: 750px;
+      background: url('/E2.jpg') no-repeat center center;
+      background-size: cover;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      min-height: 700px; /* Centrado vertical más abajo */
+    }
+
+    .card-container {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      padding: 20px;
+      background-color: white;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      width: 100%;
+      max-width: 1300px;
+    }
+
+    .photo-section {
+      flex-shrink: 0;
+    }
+
+    .profile-pic {
+      width: 400px;
+      height: 450px;
+      border-radius: 10px;
+      object-fit: cover;
+      border: none;
+    }
+
+    .info-section {
+      flex-grow: 1;
+      text-align: left;
+      font-size: 1.5rem;
+    }
+
+    .info-section h2,
+    .info-section h3 {
+      margin: 15px 0;
+      font-weight: normal;
+    }
+
+    .footer-img {
+      width: 80%;
+      height: 850px;
+      object-fit: stretch;
+      display: block;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+    }
+
+    .qr-img {
+      position: absolute;
+      bottom: 1%;
+      left: 12%;
+      width: 35%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="http://localhost:3000/E2.jpg" alt="Encabezado" style="width: 100%; height: 750px; object-fit: stretch; display: block; margin: 0 auto;">
+  </header>
+
+  <div class="container">
+    <div class="card-container">
+      <div class="photo-section">
+        <img src="http://localhost:3000/fotocarne.jpg" alt="Foto del titular" class="profile-pic">
+      </div>
+      <div class="info-section">
+        <h2>Nombre del titular: Junior Jesus Alejandro Tovar Salazar</h2>
+        <h3>Fecha de emisión: 09/04/2025</h3>
+        <h3>Fecha de expiración: 09/10/2025</h3>
+        <h3>Domicilio: Calle Vasco De Gama 270, crd 10 de constructores</h3>
+        <h3>Distrito: La Molina</h3>
+        <h3>Condición: Con manipulación de alimentos</h3>
+      </div>
+    </div>
+  </div>
+
+  <div style="position: relative;">
+    <img src="http://localhost:3000/fecha.jpg" alt="Fecha" class="footer-img">
+    <img src="http://localhost:3000/qr.jpg" alt="QR" class="qr-img">
+  </div>
+
+</body>
+</html>
+
+
+
